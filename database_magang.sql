@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 4.8.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 06 Agu 2021 pada 15.56
--- Versi server: 10.4.6-MariaDB
--- Versi PHP: 7.3.8
+-- Generation Time: Aug 09, 2021 at 11:58 AM
+-- Server version: 10.1.37-MariaDB
+-- PHP Version: 7.3.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `db_inject`
+-- Table structure for table `db_inject`
 --
 
 CREATE TABLE `db_inject` (
@@ -39,19 +39,37 @@ CREATE TABLE `db_inject` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `db_inject`
+-- Dumping data for table `db_inject`
 --
 
 INSERT INTO `db_inject` (`id`, `judul`, `file`, `bulan`, `tahun`, `format`, `tanggal`) VALUES
-(49, 'kamera', 'UAS_ML_09021381823085_Feron_Sadana.docx', 'januari', '2021', '.docx', '2021-08-02'),
-(50, 'kamera', 'Surat_izin_PT__Bukit_Asam.docx', 'januari', '2021', '.docx', '2021-08-02'),
-(51, 'kamera', '', 'januari', '2021', '', '2021-08-02'),
-(52, 'kamera', 'Surat_permohonan_KP_PT_Pusri.pdf', 'januari', '2021', '.pdf', '2021-08-02');
+(49, 'benang', '', 'februari', '2025', '', '2021-08-09'),
+(50, 'benang', '', 'februari', '2025', '', '2021-08-09'),
+(51, 'benang', '', 'februari', '2025', '', '2021-08-09'),
+(52, 'benang', '', 'februari', '2025', '', '2021-08-09'),
+(53, 'benang', '', 'februari', '2025', '', '2021-08-09'),
+(55, 'benang', '', 'februari', '2025', '', '2021-08-09'),
+(56, 'benang', '', 'februari', '2025', '', '2021-08-09'),
+(57, 'benang', '', 'februari', '2025', '', '2021-08-09'),
+(58, 'benang', '', 'februari', '2025', '', '2021-08-09'),
+(59, 'benang', '', 'februari', '2025', '', '2021-08-09'),
+(60, 'benang', '', 'februari', '2025', '', '2021-08-09'),
+(61, 'benang', '', 'februari', '2025', '', '2021-08-09'),
+(62, 'benang', '', 'februari', '2025', '', '2021-08-09'),
+(63, 'benang', '', 'februari', '2025', '', '2021-08-09'),
+(64, 'kamera', '', 'januari', '2021', '', '2021-08-09'),
+(65, 'kamera', 'Formulir_Permohonan_PKL.pdf', 'januari', '2021', '.pdf', '2021-08-09'),
+(66, 'kamera', 'Formulir_Permohonan_PKL.pdf', 'januari', '2021', '.pdf', '2021-08-09'),
+(67, 'cctv', 'Formulir_Permohonan_PKL.pdf', 'februari', '2021', '.pdf', '2021-08-09'),
+(69, 'cctv', 'Formulir_Permohonan_PKL.pdf', 'januari', '2024', '.pdf', '2021-08-09'),
+(70, 'kamera', 'Formulir_Permohonan_PKL.pdf', 'januari', '2021', '.pdf', '2021-08-09'),
+(72, 'kamera', 'Formulir_Permohonan_PKL.pdf', 'januari', '2021', '.pdf', '2021-08-09'),
+(74, 'benang', 'data-warehousing-fundamentals-by-paulraj-ponniah.pdf', 'mei', '2023', '.pdf', '2021-08-09');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `db_stasiun_injection`
+-- Table structure for table `db_stasiun_injection`
 --
 
 CREATE TABLE `db_stasiun_injection` (
@@ -64,7 +82,7 @@ CREATE TABLE `db_stasiun_injection` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `db_stasiun_injection`
+-- Dumping data for table `db_stasiun_injection`
 --
 
 INSERT INTO `db_stasiun_injection` (`id`, `judul`, `keterangan`, `bulan`, `tahun`, `format`) VALUES
@@ -101,7 +119,7 @@ INSERT INTO `db_stasiun_injection` (`id`, `judul`, `keterangan`, `bulan`, `tahun
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `user`
+-- Table structure for table `user`
 --
 
 CREATE TABLE `user` (
@@ -116,7 +134,7 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `user`
+-- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`id`, `name`, `email`, `image`, `pass`, `role_id`, `is_active`, `date_created`) VALUES
@@ -125,7 +143,7 @@ INSERT INTO `user` (`id`, `name`, `email`, `image`, `pass`, `role_id`, `is_activ
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `user_access_menu`
+-- Table structure for table `user_access_menu`
 --
 
 CREATE TABLE `user_access_menu` (
@@ -135,7 +153,7 @@ CREATE TABLE `user_access_menu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `user_access_menu`
+-- Dumping data for table `user_access_menu`
 --
 
 INSERT INTO `user_access_menu` (`id`, `role_id`, `menu_id`) VALUES
@@ -147,7 +165,7 @@ INSERT INTO `user_access_menu` (`id`, `role_id`, `menu_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `user_menu`
+-- Table structure for table `user_menu`
 --
 
 CREATE TABLE `user_menu` (
@@ -156,7 +174,7 @@ CREATE TABLE `user_menu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `user_menu`
+-- Dumping data for table `user_menu`
 --
 
 INSERT INTO `user_menu` (`id`, `menu`) VALUES
@@ -167,7 +185,7 @@ INSERT INTO `user_menu` (`id`, `menu`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `user_role`
+-- Table structure for table `user_role`
 --
 
 CREATE TABLE `user_role` (
@@ -176,7 +194,7 @@ CREATE TABLE `user_role` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `user_role`
+-- Dumping data for table `user_role`
 --
 
 INSERT INTO `user_role` (`id`, `role`) VALUES
@@ -186,7 +204,7 @@ INSERT INTO `user_role` (`id`, `role`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `user_sub_menu`
+-- Table structure for table `user_sub_menu`
 --
 
 CREATE TABLE `user_sub_menu` (
@@ -199,7 +217,7 @@ CREATE TABLE `user_sub_menu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `user_sub_menu`
+-- Dumping data for table `user_sub_menu`
 --
 
 INSERT INTO `user_sub_menu` (`id`, `menu_id`, `title`, `url`, `icon`, `is_active`) VALUES
@@ -217,7 +235,7 @@ INSERT INTO `user_sub_menu` (`id`, `menu_id`, `title`, `url`, `icon`, `is_active
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `user_token`
+-- Table structure for table `user_token`
 --
 
 CREATE TABLE `user_token` (
@@ -228,7 +246,7 @@ CREATE TABLE `user_token` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `user_token`
+-- Dumping data for table `user_token`
 --
 
 INSERT INTO `user_token` (`id`, `email`, `token`, `date_created`) VALUES
@@ -244,101 +262,101 @@ INSERT INTO `user_token` (`id`, `email`, `token`, `date_created`) VALUES
 --
 
 --
--- Indeks untuk tabel `db_inject`
+-- Indexes for table `db_inject`
 --
 ALTER TABLE `db_inject`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `db_stasiun_injection`
+-- Indexes for table `db_stasiun_injection`
 --
 ALTER TABLE `db_stasiun_injection`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `user`
+-- Indexes for table `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `user_access_menu`
+-- Indexes for table `user_access_menu`
 --
 ALTER TABLE `user_access_menu`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `user_menu`
+-- Indexes for table `user_menu`
 --
 ALTER TABLE `user_menu`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `user_role`
+-- Indexes for table `user_role`
 --
 ALTER TABLE `user_role`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `user_sub_menu`
+-- Indexes for table `user_sub_menu`
 --
 ALTER TABLE `user_sub_menu`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `user_token`
+-- Indexes for table `user_token`
 --
 ALTER TABLE `user_token`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `db_inject`
+-- AUTO_INCREMENT for table `db_inject`
 --
 ALTER TABLE `db_inject`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=75;
 
 --
--- AUTO_INCREMENT untuk tabel `db_stasiun_injection`
+-- AUTO_INCREMENT for table `db_stasiun_injection`
 --
 ALTER TABLE `db_stasiun_injection`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
--- AUTO_INCREMENT untuk tabel `user`
+-- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 
 --
--- AUTO_INCREMENT untuk tabel `user_access_menu`
+-- AUTO_INCREMENT for table `user_access_menu`
 --
 ALTER TABLE `user_access_menu`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
--- AUTO_INCREMENT untuk tabel `user_menu`
+-- AUTO_INCREMENT for table `user_menu`
 --
 ALTER TABLE `user_menu`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT untuk tabel `user_role`
+-- AUTO_INCREMENT for table `user_role`
 --
 ALTER TABLE `user_role`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT untuk tabel `user_sub_menu`
+-- AUTO_INCREMENT for table `user_sub_menu`
 --
 ALTER TABLE `user_sub_menu`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
--- AUTO_INCREMENT untuk tabel `user_token`
+-- AUTO_INCREMENT for table `user_token`
 --
 ALTER TABLE `user_token`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=91;
